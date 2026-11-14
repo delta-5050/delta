@@ -603,9 +603,17 @@
         transition: background-color 0.2s;
       }
 
-
-
-
+      .inputphone-grid label {
+        margin-top: 0;
+        align-self: center;
+      }
+      
+      .fixed-subject {
+        display: block;
+        align-self: center;
+        font-size: 15px;
+        line-height: 1.4;
+      }
 
       #lookupResults {
         margin-top: 15px;
@@ -1718,7 +1726,7 @@
 
             <label for="subject">과목</label>
             <input type="hidden" id="subject" name="subject" value="수학">
-            <span>수학</span>
+            <span class="fixed-subject">수학</span>
 
             <label for="lecture">강의</label>
             <div class="select-wrapper">
