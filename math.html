@@ -1671,10 +1671,10 @@
               <select id="grade" name="grade" required class="short-input" onchange="fetchSubjects()">
                 <option value="">선택</option>
                 <!-- <option value="초6">예비초6</option>
-                <option value="중1">예비중1</option> -->
+                <option value="중1">예비중1</option>
                 <option value="중2">예비중2</option>
                 <option value="중3">예비중3</option>
-                <option value="고1">예비고1</option>
+                <option value="고1">예비고1</option> -->
                 <option value="고2">예비고2</option>
                 <option value="고3">예비고3&N수</option>
                 <!-- <option value="일과고">일과고</option> -->
@@ -1709,12 +1709,16 @@
                     oninput="handlePhoneInput(this)">
             </div>
 
-            <label for="subject">과목</label>
+            <!-- <label for="subject">과목</label>
             <div class="select-wrapper">
               <select id="subject" name="subject" required class="short-input" onchange="fetchLectures()">
                 <option value="선택">선택</option>
               </select>
-            </div>
+            </div> -->
+
+            <label for="subject">과목</label>
+            <input type="hidden" id="subject" name="subject" value="수학">
+            <span>수학</span>
 
             <label for="lecture">강의</label>
             <div class="select-wrapper">
